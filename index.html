@@ -1,55 +1,148 @@
 <!DOCTYPE html>
-<html lang="en theme-light">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8 ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- DaisyUI + tailwind  CND -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- tailwind CND -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/a1405c6eef.js" crossorigin="anonymous"></script>
     <title>Assignment-3</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <!-- google font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+      <style>
+        .font-monrope{
+            font-family: "Manrope", sans-serif;
+        }
+      </style>
 </head>
-<body>
-    <!-- header section -->
+<body class="font-manrope">
+    
     <header>
+        <!-- navber sectin -->
+        <nav>
+            
+        </nav>
+        <!-- banner section -->
+        <section>
+
+        </section>
 
     </header>
-    <!-- main section -->
-     <main>
+        
+    <main class="md:container md:mx-auto">
         <!-- Read Our Articals and News section-->
-         <section>
-           <h2 class="text-4xl font-bold text-center mb-10">Read Our Articals and News</h2>
-          <p class="text-1xl text-center mb-20">The barn house captivates with its blend of rustic charm and modern sophistication, <br>
-            featuring weathered wood, sleek metal accents
+        <section class="bg-blue-50">
+            <h2 class="text-4xl font-bold text-center mb-10">Read Our Articals and News</h2>
+            <p class="text-1xl text-center mb-20">The barn house captivates with its blend of rustic charm and modern sophistication, <br>
+            featuring weathered wood, sleek metal accents</p>
             <!-- cards -->
-             <div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <!-- card-1 -->
-                <div class="card bg-base-100 w-96 shadow-xl">
+                <div class="card bg-base-100 w-96  rounded-xl p-5">
                     <figure>
                       <img
                         src="images/article1.png"
                         alt="home" />
                     </figure>
                     <div class="card-body">
+                        <!-- kbd's -->
+                        <div class="flex gap-4">
+                            <!-- kbd 1 -->
+                            <div class="flex gap-2">
+                                <div><kbd class="kbd">⌘</kbd></div>
+                                <div> July14, 2024</div>
+                            </div>
+                            <!-- kbd 2 -->
+                            <div class="flex gap-2">
+                                <div><kbd class="kbd">⌘</kbd></div>
+                                <div> By Admin</div>
+                            </div>
+                        </div>
                       <h2 class="card-title">How to choose the furniture right of your home.</h2>
-                      <p>The barn house captivastes with its blend of rustic charm and modern.</p>
+                      <p class="text-gray-500">The barn house captivastes with its blend of rustic charm and modern.</p>
                       <div class="card-actions justify-st">
-                        <button>Read More <i class="fa-solid fa-arrow-up-right"></i></button>
+                        <button class="font-bold">Read More <i class="fa-solid fa-arrow-right -rotate-45 bg-green-500 rounded-full"></i></button>
                       </div>
                     </div>
                   </div>
-             </div>
-
-          </p>
-
-         </section>
-     </main>
+                  <!-- card 2 -->
+                  <div class="card bg-base-100 w-96  rounded-xl p-5">
+                    <figure>
+                      <img
+                        src="images/article2.png"
+                        alt="home" />
+                    </figure>
+                    <div class="card-body">
+                        <!-- kbd's -->
+                        <div class="flex gap-4">
+                            <!-- kbd 1 -->
+                            <div class="flex gap-2">
+                                <div><kbd class="kbd">⌘</kbd></div>
+                                <div> July14, 2024</div>
+                            </div>
+                            <!-- kbd 2 -->
+                            <div class="flex gap-2">
+                                <div><kbd class="kbd">⌘</kbd></div>
+                                <div> By Admin</div>
+                            </div>
+                        </div>
+                      <h2 class="card-title">How to choose the furniture right of your home.</h2>
+                      <p class="text-gray-500">The barn house captivastes with its blend of rustic charm and modern.</p>
+                      <div class="card-actions justify-st">
+                        <button class="font-bold">Read More <i class="fa-solid fa-arrow-right -rotate-45 bg-green-500 rounded-full"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card 3 -->
+                   <div class="card bg-base-100 w-96  rounded-xl p-5">
+                    <figure>
+                      <img
+                        src="images/article3.png"
+                        alt="home" />
+                    </figure>
+                    <div class="card-body">
+                        <!-- kbd's -->
+                        <div class="flex gap-4">
+                            <!-- kbd 1 -->
+                            <div class="flex gap-2">
+                                <div><kbd class="kbd">⌘</kbd></div>
+                                <div> July14, 2024</div>
+                            </div>
+                            <!-- kbd 2 -->
+                            <div class="flex gap-2">
+                                <div><kbd class="kbd">⌘</kbd></div>
+                                <div> By Admin</div>
+                            </div>
+                        </div>
+                      <h2 class="card-title">How to choose the furniture right of your home.</h2>
+                      <p class="text-gray-500">The barn house captivastes with its blend of rustic charm and modern.</p>
+                      <div class="card-actions justify-st">
+                        <button class="font-bold">Read More <i class="fa-solid fa-arrow-right -rotate-45 bg-green-500 rounded-full"></i></button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+    </main>
      <!-- footer section -->
-      <footer>
+    <footer>
 
-      </footer>
+    </footer>
     
 </body>
 </html>
