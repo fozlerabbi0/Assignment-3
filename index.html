@@ -15,6 +15,10 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'arrow-primary': '#ABEF5F',
+                'btn-primary': '#ABEF5F',
+                'bg-primary': '#f4f4f4',
+                'bg-secondary': '#FFFFFF',
               }
             }
           }
@@ -28,21 +32,47 @@
         .font-monrope{
             font-family: "Manrope", sans-serif;
         }
+        .bg-img{
+            background-image: url(images/Vector.png);
+            background-repeat: no-repeat;
+            background-position-y: 50px;
+            background-position-x: 10px;
+        }
+
+        @media screen and (mx-width:425px){
+            .bg-img {
+                background-image: url('');
+            }
+            
+        }
       </style>
 </head>
 <body class="font-manrope">
     <!-- header section -->
-    <header>
+    <header class="">
         <!-- navber sectin -->
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   <div class="dropdown">
-                    
-                    <ul
+                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                         fill="none"
+                        viewBox="0 0 24 24"
+                         stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                     </div>
+                     <ul
                       tabindex="0"
                       class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a class=" font-bold">Home</a></li>
+                      <li><a class="font-bold">Home</a></li>
                       <li><a>Services</a></li>
                       <li><a>Portfolio</a></li>
                       <li><a>Blogs</a></li>
@@ -53,20 +83,22 @@
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
+                    <li><a class="font-bold">Home</a></li>
                     <li><a>Services</a></li>
                     <li><a>Portfolio</a></li>
                     <li><a>Blogs</a></li>
                     <li><a>Contact Us</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end gap-6">
-                    <div class="gap-4">
-                        <i class="fa-solid fa-magnifying-glass bg-slate-400 rounded-xl"></i>
-                        <i class="fa-solid fa-cart-shopping bg-slate-400 rounded-xl"></i>
-                    </div>
+                <div class="navbar-end gap-4">
                     <div>
-                        <a class="btn">Book Consult <i class="fa-solid fa-arrow-right-long -rotate-45 bg-black text-white rounded-2xl"></i></a>
+                        <div class="gap-4">
+                            <i class="fa-solid fa-magnifying-glass "></i>
+                            <i class="fa-solid fa-cart-shopping bg-slate-400 rounded-xl"></i>
+                        </div>  
+                    </div>
+                     <div>
+                        <a class="btn">Book Consult <i class="fa-solid fa-arrow-right-long -rotate-45 bg-black text-white px-2 py-1 rounded-full"></i></a>
                     </div>
                 </div>
               </div>
@@ -92,13 +124,74 @@
 
     </header>
         
-    <main class="md:container md:mx-auto">
+    <main class="">
         <!-- We design thoughtful, liveable spaces section -->
-         <section></section>
+        <section class="bg-bg-primary bg-img">
+            <div class="md:container mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-x-14 py-24">
+                 <div class="flex-1">
+                    <!-- design -->
+                    <div class="text-center sm:text-start">
+                        <button class="text-base font-bold bg-bg-secondary px-4 py-2 w-32 rounded-full"><i class="fa-solid fa-arrow-right text-base"></i> About Us</button>
+                        <h2 class="text-4xl lg:text-6xl font-bold py-4">We design thoughtful, <br> liveable spaces</h2>
+                        <p class="text-base font-medium">The barn house captivates with its blend of rustic charm and <br>
+                            modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    </div>
+                    <div class="flex bg-bg-secondary p-10 rounded-xl gap-6 my-6">
+                        <div class="">
+                            <img width="100%" src="images/commercial.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-extrabold mb-2">Commercial</h2>
+                            <p class="text-base font-medium">The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                        </div>
+                    </div>
+                    <div class="flex  bg-bg-secondary p-10 rounded-xl gap-6 my-6">
+                        <div>
+                            <img width="100%" src="images/residential.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-extrabold mb-2">Residential</h2>
+                            <p class="text-base font-medium">The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- image -->
+                 <div class="flex-1">
+                    <img class="mx-auto" width="90%" src="images/Rectangle.png" alt="">
+                 </div>
+            </div>
+        </section>
          <!-- 235+ and other section -->
-          <section></section>
+        <section>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 shadow-lg border border-x-lime-400 p-6">
+                <!-- stats 1 -->
+                <div class="stat">
+                  <div><i class="fa-solid fa-message"></i></div>
+                  <div class="">235+</div>
+                  <div class="">Happy Client Review</div>
+                </div>
+                <!-- stats 2 -->
+                <div class="stat">
+                    <div><i class="fa-solid fa-message"></i></div>
+                    <div class="">235+</div>
+                    <div class="">Happy Client Review</div>
+                </div>
+                <!-- stats 3 -->
+                <div class="stat">
+                    <div><i class="fa-solid fa-message"></i></div>
+                    <div class="">235+</div>
+                    <div class="">Happy Client Review</div>
+                </div>
+                <!-- stats 4 -->
+                <div class="stat">
+                    <div><i class="fa-solid fa-message"></i></div>
+                    <div class="">235+</div>
+                    <div class="">Happy Client Review</div>
+                </div>
+            </div>
+        </section>
         <!-- Our Works Process section-->
-         <section class="mt-20 mb-20 bg-blue-50">
+         <section class="mt-20 mb-20 p-20 bg-blue-50 ?">
             <div class="text-center ">
                 <button class="btn btn-primary mb-5">View Details <i class="fa-solid fa-arrow-right-long -rotate-45 bg-green-500 text-black  rounded-2xl"></i></button>
                 <h2 class="text-4xl font-bold mb-5">Our Works Process</h2>
@@ -106,9 +199,9 @@
                  featuring weathered wood, sleek metal accents.
                 </p>
                  <!-- cards -->
-                  <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                  <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <!-- card 1 -->
-                        <div class="card bg-base-100 w-96  text-start border border-pink-500  rounded ">
+                        <div class="card bg-base-100 w-96  text-start border border-pink-500  rounded p-5">
                              <img class="w-16 h-16" src="images/concept.png" alt="">
                             <div class="">
                                 <h2 class="text-2xl font-bold">Concept</h2>
@@ -145,7 +238,7 @@
          <!-- Our Latest Portfolio section -->
          <section></section>
         <!-- Read Our Articals and News section-->
-        <section class="bg-blue-50">
+        <section class="bg-blue-50 ?">
             <h2 class="text-4xl font-bold text-center mb-10">Read Our Articals and News</h2>
             <p class="text-1xl text-center mb-20">The barn house captivates with its blend of rustic charm and modern sophistication, <br>
             featuring weathered wood, sleek metal accents</p>
@@ -242,8 +335,22 @@
         
     </main>
      <!-- footer section -->
-    <footer>
-
+    <footer class="mt-16">
+        <footer class="footer footer-center bg-base-200 text-base-content rounded p-7 bg-pink-200">
+            <h2 class="text-3xl font-extrabold">Rinterio</h2>
+            <p class="text-gray-500">The barn house captivates with its blend of rustic charm and modern sophistication,<br>
+                 featuring weathered wood, sleek metal accents.</p>
+            <nav class="grid grid-flow-col gap-20">
+              <a class="link link-hover">Home</a>
+              <a class="link link-hover">Services</a>
+              <a class="link link-hover">Portfolio</a>
+              <a class="link link-hover">Blogs</a>
+              <a class="link link-hover">Contact Us</a>
+            </nav>
+            <div>
+                <a class="btn">Book Consult <i class="fa-solid fa-arrow-right-long -rotate-45 bg-black text-white rounded-s-full"></i></a>
+            </div>
+          </footer>
     </footer>
     
 </body>
